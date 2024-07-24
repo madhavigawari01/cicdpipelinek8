@@ -61,7 +61,8 @@ pipeline {
                     git commit -m "Update deployment image to version ${BUILD_NUMBER}"
                     git reset --hard
                     git checkout master
-                    git push https://${GITHUB_TOKEN}@github.com:${GIT_USER_NAME}/${GIT_REPO_NAME} HEAD:main
+                    git push https://git@github.com:${GIT_USER_NAME}/${GIT_REPO_NAME} HEAD:main
+                    #git push https://${GITHUB_TOKEN}@github.com:${GIT_USER_NAME}/${GIT_REPO_NAME} HEAD:main
                     #git push https://github.com/${GIT_USER_NAME}/${GIT_REPO_NAME}.git
                     #git push git@github.com:madhavigawari01/cicdpipelinek8.git  HEAD:main
                     #git push git@github.com:madhavigawari01/cicdpipelinek8.git  HEAD:main
