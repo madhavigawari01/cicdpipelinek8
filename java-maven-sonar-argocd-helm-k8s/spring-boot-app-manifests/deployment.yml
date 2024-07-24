@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: amolth/hello-world_amol:2
+        image: amolth/hello-world_amol:latest
         ports:
         - containerPort: 8080
